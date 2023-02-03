@@ -26,6 +26,6 @@ public class HighScore : MonoBehaviour
 
      static public void TRY_SET_HIGH_SCORE( int scoreToTry ) {
         if ( scoreToTry <= SCORE ) return; // If scoreToTry is too low, return
-       SCORE = scoreToTry;
+        SCORE = scoreToTry;
      }
 }
