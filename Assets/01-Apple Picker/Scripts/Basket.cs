@@ -33,13 +33,14 @@ public class Basket : MonoBehaviour
     
     void OnCollisionEnter( Collision coll ) {                             
         // Find out what hit this basket
-        GameObject collidedWith = coll.gameObject;                       
+        GameObject collidedWith = coll.gameObject;    
+        
         if ( collidedWith.CompareTag("Apple") ) {
            //destroys collided object
             Destroy( collidedWith );
 
             //increase the score
-            scoreCounter.score += 100;
+            scoreCounter.score += 1000;
             HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
         }
     }
