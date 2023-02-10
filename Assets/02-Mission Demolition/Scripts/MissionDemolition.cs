@@ -55,6 +55,9 @@ public class MissionDemolition : MonoBehaviour
         UpdateGUI();
 
         mode = GameMode.playing;
+
+        //Zoom out to show both
+        FollowCam.SWITCH_VIEW(FollowCam.eView.both);
     }
 
     void UpdateGUI() {
@@ -71,6 +74,9 @@ public class MissionDemolition : MonoBehaviour
             //change mode to stop checking for level end
             mode = GameMode.levelEnd;
 
+            //Zoom out to show both
+            FollowCam.SWITCH_VIEW(FollowCam.eView.both);
+
             //start the next level in 2 seconds
             Invoke("NextLevel", 2f);
         }
@@ -86,7 +92,7 @@ public class MissionDemolition : MonoBehaviour
     }
 
     //static method that allows code anywhere to increment shotsTaken
-    static public void SHOTS_FIRED() {
+    static public void SHOT_FIRED() {
         S.shotsTaken++;
     }
 
