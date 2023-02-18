@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Apple
+  - Undefined
+  - Blast
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - Apple
   - Basket
   - 
-  - 
-  - 
-  - 
+  - UFO
+  - Blast
+  - Player
   - 
   - 
   - 
