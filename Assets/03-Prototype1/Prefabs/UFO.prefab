@@ -444,8 +444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blastPrefab: {fileID: 6786174623472932057, guid: 77cd786ebe46edf4cbef2bb345266d74, type: 3}
   speed: 15
-  leftAndRightEdge: 25
-  changeDirChance: 0.005
+  leftAndRightEdge: 10
+  changeDirChance: 0.001
   blastDropDelay: 1
 --- !u!1 &6336564339753507846
 GameObject:

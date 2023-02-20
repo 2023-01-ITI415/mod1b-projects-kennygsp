@@ -15,10 +15,10 @@ public class UFO : MonoBehaviour
     public float speed = 1f;
 
     //Distance where AppleTree turns around
-    public float leftAndRightEdge = 10f;
+    public float leftAndRightEdge = 15f;
 
     //Chance that the AppleTree will change directions
-    public float changeDirChance = 0.1f;
+    public float changeDirChance = 0.001f;
 
     //Seconds between blast instantiations
     public float blastDropDelay = 1f;
