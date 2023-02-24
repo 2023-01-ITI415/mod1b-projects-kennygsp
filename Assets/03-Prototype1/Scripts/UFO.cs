@@ -15,7 +15,8 @@ public class UFO : MonoBehaviour
     public float speed = 1f;
 
     //Distance where AppleTree turns around
-    public float leftAndRightEdge = 15f;
+    public float leftEdge = 15f;
+    public float RightEdge = 90f;
 
     //Chance that the AppleTree will change directions
     public float changeDirChance = 0.001f;
@@ -46,11 +47,11 @@ public class UFO : MonoBehaviour
         transform.position = pos;
 
         //Changing Direction
-        if (pos.x < -leftAndRightEdge) {
+        if (pos.x < -leftEdge) {
             //moves right when it hits the wall
             speed = Mathf.Abs(speed);
         }
-        else if (pos.x > leftAndRightEdge) {
+        else if (pos.x > RightEdge) {
             //moves left when it hits the wall
             speed = -Mathf.Abs(speed);
         }
